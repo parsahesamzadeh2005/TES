@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- سوال ۱ -->
+        <TextView
+            android:text="سؤال ۱: از چه فعالیتی بیشتر لذت می‌بری؟"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q1_sport" android:text="ورزش کردن"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <RadioButton android:id="@+id/q1_music" android:text="موزیک گوش دادن"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <RadioButton android:id="@+id/q1_movie" android:text="فیلم دیدن"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <RadioButton android:id="@+id/q1_science" android:text="مطالعه علمی"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </RadioGroup>
+
+        <!-- سوال ۲ -->
+        <TextView
+            android:text="سؤال ۲: بیشتر وقتت رو با چی می‌گذرونی؟"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/q2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q2_sport" android:text="فعالیت بدنی"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <RadioButton android:id="@+id/q2_music" android:text="شنیدن آهنگ"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <RadioButton android:id="@+id/q2_movie" android:text="تماشای فیلم"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <RadioButton android:id="@+id/q2_science" android:text="مطالعه یا تحقیق"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </RadioGroup>
+
+        <!-- سوال ۳ -->
+        <TextView
+            android:text="سؤال ۳: ترجیح می‌دهی در مورد چی بیشتر یاد بگیری؟"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/q3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/q3_sport" android:text="ورزش و تغذیه"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <RadioButton android:id="@+id/q3_music" android:text="آهنگ و ساز"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <RadioButton android:id="@+id/q3_movie" android:text="سینما و بازیگرها"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <RadioButton android:id="@+id/q3_science" android:text="علوم و فناوری"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnResult"
+            android:text="نمایش نتیجه و دانلود"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</ScrollView>
