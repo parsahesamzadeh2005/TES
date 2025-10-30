@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        //  q1 = findViewById(R.id.q1);
+        q1 = findViewById(R.id.q1);idwaiodwah
         q2 = findViewById(R.id.q2);
         q3 = findViewById(R.id.q3);
         btnResult = findViewById(R.id.btnResult);
